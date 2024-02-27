@@ -1,0 +1,171 @@
+@font-face {
+    font-family: ttk;
+    src: url(./fonts/TTLakes-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: ttklights;
+    src: url(./fonts/TTLakesCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: ttkreg;
+    src: url(./fonts/TTLakesCompressed-Regular.ttf);
+}
+
+:root{
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.5em);
+}
+
+body{
+    margin: 0;
+    background-color:#F8F8F8;
+}
+
+.header{
+    background-color: #FFFFFF;
+}
+.header__container{
+    margin-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__headers{
+    display: flex;
+    align-items: center;
+    
+}
+
+.main__headers__h1{
+    margin: 10px 16px;
+    font-family: ttk;
+    font-size: 28px;
+}
+
+.main__menu{
+    padding: 20px;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  
+}
+.main__menu::-webkit-scrollbar {
+    display: none;
+}
+
+.main__menu__item-1 {
+    font-family: ttklights;
+    color: #7E7E82;
+    padding: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .main__menu__item-1:hover{
+    border-radius: 5px;
+    border: solid 2px #B8FFEC;
+    background-color: #FFFFFF;
+  }
+  .main__menu__item-2 {
+    font-family: ttklights;
+    color: #7E7E82;
+    padding: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .main__menu__item-2:hover{
+    border-radius: 5px;
+    border: solid 2px #B8FFEC;
+    background-color: #FFFFFF;
+  }
+  .main__menu__item-3 {
+    font-family: ttklights;
+    color: #7E7E82;
+    padding: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .main__menu__item-3:hover{
+    border-radius: 5px;
+    border: solid 2px #B8FFEC;
+    background-color: #FFFFFF;
+  }
+  .main__menu__item-4 {
+    font-family: ttklights;
+    color: #7E7E82;
+    padding: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .main__menu__item-4:hover{
+    border-radius: 5px;
+    border: solid 2px #B8FFEC;
+    background-color: #FFFFFF;
+  }
+
+  .main__info__title{
+    margin: 10px 16px;
+    font-family: ttklights;
+    font-size: 14px;
+  }
+
+  .main__info__next{
+    font-family: ttkreg;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .main__info__title-2{
+    margin: 10px 16px;
+    font-family: ttklights;
+    font-size: 14px;
+  }
+
+  @media (min-width:320px) {
+    .main__info__title-2{
+      display: none;
+    }
+    /* Докинуть отсальные элементы, которые нужно скрыть на телефоне */
+  }
+
+  @media (min-width:768px) {
+    .main__info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+    }
+    .main__info {
+      position: relative;
+  }
+    .main__info__title-2{
+      position: absolute;
+      top: 55%;
+      display: block; 
+        
+    }
+    .main__info__next{
+      position: absolute;
+      top: 95%;
+      margin-left: 16px;
+    }
+    .main__info__logo img {
+      width: 360px; /* Новая ширина изображения */
+      height: 208px;
+      padding-left: 40px;
+  }
+  }
