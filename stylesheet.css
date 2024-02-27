@@ -140,6 +140,11 @@ body{
     .main__info__title-2{
       display: none;
     }
+    .main__info__logo img {
+      width: 320px;
+
+    }
+    
     /* Докинуть отсальные элементы, которые нужно скрыть на телефоне */
   }
 
