@@ -33,6 +33,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+  .header__container__check{
+    padding-right: 16px;
+  }
 }
 .main__headers{
     display: flex;
@@ -41,7 +45,7 @@ body{
 }
 
 .main__headers__h1{
-    margin: 10px 16px;
+    margin: 30px 16px;
     font-family: ttk;
     font-size: 28px;
 }
@@ -142,13 +146,39 @@ body{
     }
     .main__info__logo img {
       width: 320px;
-
+    }
+    .header__container__dispoint img {
+      display: none;
+    }
+    .header__container__call{
+      display: none;
+    }
+    .header__container__chat{
+      display: none;
+    }
+    .header__container__profile{
+      display: none;
     }
     
     /* Докинуть отсальные элементы, которые нужно скрыть на телефоне */
   }
 
   @media (min-width:768px) {
+
+    .header__container__dispoint img {
+      display: block;
+    }
+
+    .header__container__call{
+      display: block;
+      padding-left: 290px;
+    }
+    .header__container__chat{
+      display: block;
+    }
+    .header__container__profile{
+      display: block;
+    }
     .main__info{
         display: flex;
         justify-content: flex-start;
