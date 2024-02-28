@@ -81,7 +81,7 @@ body{
     color: black;
   }
 
-  @media (min-width: 221px) and (max-width: 320px) {
+  @media (min-width: 220px) and (max-width: 320px) {
   .header__call,
   .header__chat,
   .header__profile,
@@ -89,8 +89,8 @@ body{
   .main__check__img,
   .main__repair__text,
   .main__check__text,
-  .main__title__2,
-  .main__title__3 {
+  .main__title2,
+  .main__title3 {
       display: none;
   }
   .main__logo img {
@@ -111,8 +111,8 @@ body{
       .main__check__img,
       .main__repair__text,
       .main__check__text,
-      .main__title__2,
-      .main__title__3 {
+      .main__title2,
+      .main__title3 {
           display: none;
       }
       .main__logo img {
@@ -138,7 +138,7 @@ body{
     .header__check__img,
     .main__repair__text,
     .main__check__text,
-    .main__title__3{
+    .main__title3{
       display: none;
     }
     .main__info{
@@ -149,7 +149,7 @@ body{
     .main__info {
       position: relative;
     }
-    .main__title__2{
+    .main__title2{
       position: absolute;
       top: 55%;
       display: flex; 
@@ -232,12 +232,12 @@ body{
         margin-left: 40px;
         border-radius: 5px;
     }
-    .main__title__2 {
+    .main__title2 {
         position: absolute;
         top: 20%;
         display: flex;
     }
-    .main__title__3 {
+    .main__title3 {
         display: flex;
         position: absolute;
         top: 33%;
