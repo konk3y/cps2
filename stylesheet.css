@@ -245,6 +245,7 @@ body{
       display: inline-flex;
       position: absolute;
       right: 0px;
+      padding-right: 30px;
       
     }
     
@@ -252,7 +253,6 @@ body{
       display: inline-flex;
       align-items: center; /* Выравнивание по вертикали по центру */
       justify-content: flex-end;
-      padding-right: 40px;
     
     }
 }
