@@ -49,7 +49,7 @@ body{
 .main__menu{
     padding: 20px;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     white-space: nowrap;
 }
 .main__menu::-webkit-scrollbar {
@@ -62,10 +62,10 @@ body{
     margin: 0 10px;
     text-decoration: none;
     font-size: 14px;
+    border: solid 1px transparent;
   }
   .main__menu__item-link:hover{
-    border-radius: 5px;
-    border: solid 2px #B8FFEC;
+    border-color: #B8FFEC; /* Изменение цвета рамки при наведении */
     background-color: #FFFFFF;
   }
   .main__title-style{
