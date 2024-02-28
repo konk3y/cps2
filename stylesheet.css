@@ -18,6 +18,7 @@
     font-size: calc(1vw + 0.5em);
 }
 body{
+    overflow: hidden;
     margin: 0;
     background-color:#F8F8F8;
 }
@@ -34,11 +35,12 @@ body{
     align-items: center;
     justify-content: space-around;
 }
-.main__headers{
-    display: flex;
-    align-items: center;
-    
+.flex__left{
+  display: inline-flex;
+  align-items: center; /* Выравнивание по вертикали по центру */
+  justify-content: flex-start;
 }
+
 .main__h1{
     margin: 30px 16px;
     font-family: ttk;
@@ -82,24 +84,24 @@ body{
   }
 
   @media (min-width: 220px) and (max-width: 320px) {
-  .header__call,
-  .header__chat,
-  .header__profile,
-  .main__repair__img,
-  .main__check__img,
-  .main__repair__text,
-  .main__check__text,
-  .main__title2,
-  .main__title3 {
-      display: none;
+    .header__call,
+    .header__chat,
+    .header__profile,
+    .main__repair__img,
+    .main__check__img,
+    .main__repair__text,
+    .main__check__text,
+    .main__title2,
+    .main__title3 {
+        display: none;
+    }
+    .main__logo img {
+        width: 220px;
+    }
+    .header__dispoint img {
+        display: none;
+    }
   }
-  .main__logo img {
-      width: 220px;
-  }
-  .header__dispoint img {
-      display: none;
-  }
-}
 
   
   
@@ -174,15 +176,16 @@ body{
         display: none;
     }
     .main__headers {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      
         box-sizing: border-box;
         width: 100%;
         padding-top: 26px;
         background-color: #f8f8f8;
         z-index: 100;
     }
+
+  
+
     .highlight {
         padding-right: 20px;
     }
@@ -190,18 +193,16 @@ body{
         margin: 0;
         font-family: ttk;
         font-size: 32px;
+       
     }
     .main__repair__text,
     .main__check__text {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
+        
         font-family: ttkreg;
         font-size: 16px;
         color: #000000;
         border-radius: 5px;
         text-decoration: none;
-        margin-left: 255px;
     }
     .main__repair__text:hover,
     .main__check__text:hover {
@@ -209,15 +210,13 @@ body{
     }
     .main__repair__img,
     .main__check__img {
-        display: flex;
-        align-items: center;
+       
         font-family: ttkreg;
         font-size: 16px;
         color: #7e7e82;
         padding: 5px 16px;
         border-radius: 5px;
         text-decoration: none;
-        margin-left: auto;
     }
     .main__repair__img:hover,
     .main__check__img:hover {
@@ -227,10 +226,10 @@ body{
         width: 100%;
     }
     .main__logo img {
-        width: 532px;
+        width: 632px;
         height: 307px;
         margin-left: 40px;
-        border-radius: 5px;
+        border-radius: 70px;
     }
     .main__title2 {
         position: absolute;
@@ -241,5 +240,19 @@ body{
         display: flex;
         position: absolute;
         top: 33%;
+    }
+    .main__superflex{
+      display: inline-flex;
+      position: absolute;
+      right: 0px;
+      
+    }
+    
+    .main__rflex{
+      display: inline-flex;
+      align-items: center; /* Выравнивание по вертикали по центру */
+      justify-content: flex-end;
+      padding-right: 40px;
+    
     }
 }
